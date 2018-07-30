@@ -1,7 +1,7 @@
 import math
 
 
-def is_prime(n):
+def is_prime(n: int):
     if n == 2:
         return True
     if n <= 1 or is_even(n):
@@ -12,7 +12,7 @@ def is_prime(n):
     return True
 
 
-def is_even(n):
-    if int(n) & 1 == 0:
+def is_even(n: int):
+    if n & 1 == 0:
         return True
     return False
