@@ -6,7 +6,7 @@ My solutions to [Project Euler](https://projecteuler.net) Problems using Python 
 ### [functions.py](#functionspy-1)
 
 * [is_prime(n)](#is_primen)
-* [is_even(n)](#isevenn)
+* [is_even(n)](#is-evenn)
 
 ### [Problems](#problems-1)
 
