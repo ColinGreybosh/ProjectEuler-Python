@@ -5,8 +5,8 @@ My solutions to [Project Euler](https://projecteuler.net) Problems using Python 
 
 ### [functions.py](#functionspy-1)
 
-* [is_prime(n)](#is_primen-1)
-* [is_even(n)](#isevenn-1)
+* [is_prime(n)](#is_primen)
+* [is_even(n)](#isevenn)
 
 ### [Problems](#problems-1)
 
