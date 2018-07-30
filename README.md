@@ -3,12 +3,12 @@ My solutions to [Project Euler](https://projecteuler.net) Problems using Python 
 
 ## [Table of Contents](#table-of-contents)
 
-### [Functions](#functions-2)
+### [Functions](#functions-1)
 
 * [Primality](#primality)
 * [Parity](#parity)
 
-### [Problems](#problems-2)
+### [Problems](#problems-1)
 
 1. [Multiples of 3 and 5](#multiples-of-3-and-5)
 2. [Even Fibonacci Numbers](#even-fibonacci-numbers)
@@ -26,7 +26,7 @@ My solutions to [Project Euler](https://projecteuler.net) Problems using Python 
 14. [Longest Collatz Sequence](#longest-collatz-sequence)
 15. [Lattice Paths](#lattice-paths)
 
-## [Functions](functions.py)
+## [Functions-1](functions.py)
 
 ### Primality
 ### `is_prime(n)`
@@ -69,7 +69,7 @@ def is_even(n: int):
     return False
 ```
 
-## Problems
+## [Problems](#problems-1)
 
 ### Multiples of 3 and 5
 
