@@ -3,10 +3,10 @@ My solutions to [Project Euler](https://projecteuler.net) Problems using Python 
 
 ## [Table of Contents](#table-of-contents)
 
-### [Functions](#functions-1)
+### [functions.py](#functionspy-1)
 
-* [Primality](#primality)
-* [Parity](#parity)
+* [is_prime(n)](#is_primen-1)
+* [is_even(n)](#isevenn-1)
 
 ### [Problems](#problems-1)
 
@@ -26,9 +26,8 @@ My solutions to [Project Euler](https://projecteuler.net) Problems using Python 
 14. [Longest Collatz Sequence](#longest-collatz-sequence)
 15. [Lattice Paths](#lattice-paths)
 
-## [Functions-1](functions.py)
+## [functions.py](#functionspy-1)
 
-### Primality
 ### `is_prime(n)`
 
 Takes an integer as input and returns a boolean value corresponding to
@@ -53,7 +52,6 @@ def is_prime(n: int):
     return True
 ```
 
-### Parity
 ### `is_even(n)`
 
 Takes an integer as input and returns a boolean value corresponding to
