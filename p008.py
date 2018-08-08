@@ -71,4 +71,9 @@ def product_of_digit_string(digits):
         return -1
 
 
-print(largest_n_length_product_from_digit_string(13, big_num))
+def main():
+    print(largest_n_length_product_from_digit_string(13, big_num))
+
+
+if __name__ == '__main__':
+    main()

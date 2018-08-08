@@ -15,4 +15,9 @@ def find_nth_prime(n):
             return i
 
 
-print(find_nth_prime(10001))
+def main():
+    print(find_nth_prime(10001))
+
+
+if __name__ == '__main__':
+    main()

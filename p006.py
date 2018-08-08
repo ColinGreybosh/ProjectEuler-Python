@@ -10,7 +10,13 @@
 # Find the difference between the sum of the squares of the first one
 # hundred natural numbers and the square of the sum.
 
-natural_nums = range(1, 101)
-sum_of_squares = sum(map(lambda x: x * x, natural_nums))
-square_of_sum = sum(natural_nums) * sum(natural_nums)
-print(square_of_sum - sum_of_squares)
+
+def main():
+    natural_nums = range(1, 101)
+    sum_of_squares = sum(map(lambda x: x * x, natural_nums))
+    square_of_sum = sum(natural_nums) * sum(natural_nums)
+    print(square_of_sum - sum_of_squares)
+
+
+if __name__ == '__main__':
+    main()

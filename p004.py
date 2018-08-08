@@ -23,4 +23,9 @@ def find_palindromes():
     return palindromes
 
 
-print(max(find_palindromes()))
+def main():
+    print(max(find_palindromes()))
+
+
+if __name__ == '__main__':
+    main()

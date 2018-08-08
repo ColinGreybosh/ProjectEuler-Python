@@ -42,4 +42,10 @@ def find_first_triangular_num_with_over_n_factors(n):
             return tri_num
 
 
-print(find_first_triangular_num_with_over_n_factors(500))
+def main():
+    print(find_first_triangular_num_with_over_n_factors(500))
+
+
+if __name__ == '__main__':
+    main()
+

@@ -16,4 +16,9 @@ def get_fibonacci_nums(n):
     return nums
 
 
-print(sum(filter(is_even, get_fibonacci_nums(4000000))))
+def main():
+    print(sum(filter(is_even, get_fibonacci_nums(4000000))))
+
+
+if __name__ == '__main__':
+    main()

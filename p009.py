@@ -24,4 +24,9 @@ def find_pyth_triple_with_sum_n(n):
                 return triple
 
 
-print(reduce(mul, find_pyth_triple_with_sum_n(1000)))
+def main():
+    print(reduce(mul, find_pyth_triple_with_sum_n(1000)))
+
+
+if __name__ == '__main__':
+    main()

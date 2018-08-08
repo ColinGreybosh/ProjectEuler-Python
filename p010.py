@@ -9,4 +9,9 @@ def sum_of_primes_below_n(n):
     return sum([x for x in range(2, n) if is_prime(x)])
 
 
-print(sum_of_primes_below_n(int(2e6)))
+def main():
+    print(sum_of_primes_below_n(int(2e6)))
+
+
+if __name__ == '__main__':
+    main()

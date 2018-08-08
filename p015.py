@@ -11,4 +11,9 @@ def routes_through_grid_of_size_n(n):
     return int(math.factorial(2 * n) / math.pow((math.factorial(n)), 2))
 
 
-print(routes_through_grid_of_size_n(20))
+def main():
+    print(routes_through_grid_of_size_n(20))
+
+
+if __name__ == '__main__':
+    main()

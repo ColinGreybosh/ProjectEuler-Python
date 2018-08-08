@@ -52,4 +52,10 @@ class Collatz:
         return longest_chain
 
 
-print(Collatz.longest_collatz_chain_in_range(Collatz(), range(1, int(1e6))))
+def main():
+    print(Collatz.longest_collatz_chain_in_range(Collatz(),
+                                                 range(1, int(1e6)))[0])
+
+
+if __name__ == '__main__':
+    main()

@@ -6,13 +6,18 @@
 
 
 def is_divisible_from_1_20(n):
-    for i in range(2, 21):
+    for i in range(1, 21):
         if n % i != 0:
             return False
     return True
 
 
-for x in range(1, int(1e9)):
-    if is_divisible_from_1_20(x * 2520):
-        print(x * 2520)
-        break
+def main():
+    for x in range(2520, int(1e9)):
+        if is_divisible_from_1_20(x * 2520):
+            print(x * 2520)
+            break
+
+
+if __name__ == '__main__':
+    main()
