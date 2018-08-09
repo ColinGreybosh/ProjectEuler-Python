@@ -13,7 +13,7 @@ from functions import is_prime
 
 def get_largest_prime_factor(n):
     for i in range(3, math.ceil(n / 2) + 1, 2):
-        if n % i == 0 and is_prime(n / i):
+        if n % i == 0 and is_prime(int(n / i)):
             return int(n / i)
 
 
