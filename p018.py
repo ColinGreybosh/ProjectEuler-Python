@@ -31,13 +31,13 @@ Find the maximum total from top to bottom of the triangle below:
                04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
 
 NOTE: As there are only 16384 routes, it is possible to solve this problem
-   by trying every route. However, Problem 67, is the same challenge with
+by trying every route. However, Problem 67, is the same challenge with
 a triangle containing one-hundred rows; it cannot be solved by brute
 force, and requires a clever method! ;o)
 """
 
 tri = \
-"75\n\
+    "75\n\
 95 64\n\
 17 47 82\n\
 18 35 87 10\n\
@@ -54,24 +54,23 @@ tri = \
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23"
 
 
-class Tree:
-    def __init__(self, val, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.r = right
+def reduce(triangle):
+    if len(triangle) > 1:
+        base = triangle[-1]
+        root = triangle[-2]
 
-    def __str__(self):
-        return str(self.val)
+        for i in range(len(root)):
+            max_sum = root[i]
+            max_sum += base[i] if base[i] > base[i+1] else base[i+1]
+            root[i] = max_sum
+    return triangle[:-1]
 
 
 def main():
     nums = [list(map(int, line.split(' '))) for line in tri.splitlines()]
-    print(nums)
-    root = Tree(nums[0][0])
-    for line in nums:
-        for num in line:
-            root.
-
+    while len(nums) != 1:
+        nums = reduce(nums)
+    print(nums[0][0])
 
 
 if __name__ == '__main__':
