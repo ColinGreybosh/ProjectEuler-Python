@@ -14,4 +14,22 @@ For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22,
 Evaluate the sum of all the amicable numbers under 10000.
 """
 
+def d(n):
+    total = 0
+    for factor in range(1, int(n ** 0.5) + 1):
+        if n % factor == 0:
+            total += (factor) + (n // factor)
+    return total - n
 
+
+def main():
+    total = 0
+    for a in range(2, 10000):
+        b = d(a)
+        if b > a and d(b) == a:
+            total += a + b
+    print(total)
+
+
+if __name__ == '__main__':
+    main()
