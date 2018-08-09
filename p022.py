@@ -15,3 +15,19 @@ What is the total of all the name scores in the file?
 """
 
 
+def alpha_value(name):
+    return sum(map(lambda c: ord(c) - 96, name.lower()))
+
+
+def main():
+    names = open('resources/names.txt', 'r')
+    name_list = sorted(names.read()[1:-1].split('","'))
+    names.close()
+    name_list = list(map(alpha_value, name_list))
+    for i in range(len(name_list)):
+        name_list[i] *= (i + 1)
+    print(sum(name_list))
+
+
+if __name__ == '__main__':
+    main()
