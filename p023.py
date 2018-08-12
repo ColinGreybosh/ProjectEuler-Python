@@ -23,4 +23,30 @@ Find the sum of all the positive integers which cannot be written as the
 sum of two abundant numbers.
 """
 
+from functions import find_proper_divisors
 
+
+def is_abundant(n):
+    if n < 12:
+        return False
+    return sum(find_proper_divisors(n)) > n
+
+
+def is_abundant_sum(n):
+    for i in abundant_nums:
+        if i > n:
+            return False
+        if (n - i) in abundant_nums:
+            return True
+    return False
+
+
+abundant_nums = set([x for x in range(1, 28124) if is_abundant(x)])
+
+
+def main():
+    print(sum([x for x in range(1, 28124) if not is_abundant_sum(x)]))
+
+
+if __name__ == '__main__':
+    main()
