@@ -23,3 +23,29 @@ cycle in its decimal fraction part.
 """
 
 
+def period_len(q):
+    remainder = 1
+    for i in range(1, q + 1):
+        remainder = (10 * remainder) % q
+    d = remainder
+    count = 0
+    while True:
+        remainder = (10 * remainder) % q
+        count += 1
+        if remainder == d:
+            break
+    return count
+
+
+def main():
+    d = 0
+    length = 0
+    for i in range(2, 999):
+        if period_len(i) > length:
+            d = i
+            length = period_len(i)
+    print(d)
+
+
+if __name__ == '__main__':
+    main()
