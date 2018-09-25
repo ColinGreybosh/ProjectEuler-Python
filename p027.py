@@ -26,5 +26,41 @@ Find the product of the coefficients, a and b, for the quadratic
 expression that produces the maximum number of primes for consecutive
 values of n, starting with n = 0.
 """
+from functions import is_prime
 
 
+def quad_value(n, a, b):
+    return n**2 + a * n + b
+
+
+"""
+I feel like there's a better algorithm to solve this. 
+The quadratic is symmetrical about an axis centered in the interval
+[0, l-1] where l is the length of the consecutive primes generated
+by the equation. 
+"""
+
+
+def main():
+    max_a = 0
+    max_b = 0
+    max_prime_length = 0
+
+    for a in range(-999, 1000):
+        for b in range(-1000, 1001):
+            length = 0
+            for n in range(2000):
+                if is_prime(quad_value(n, a, b)):
+                    length += 1
+                else:
+                    if length > max_prime_length:
+                        max_prime_length = length
+                        max_a = a
+                        max_b = b
+                    break
+
+    print(f'{max_a * max_b}')
+
+
+if __name__ == '__main__':
+    main()
